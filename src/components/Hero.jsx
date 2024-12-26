@@ -14,7 +14,7 @@ export default function Hero() {
                             className="inline-flex items-center gap-x-2 border text-sm p-1 ps-3 rounded-full transition"
                             href="#"
                         >
-                            PRO release - Join to waitlist
+                            Check out the latest video
                             <span className="py-1.5 px-2.5 inline-flex justify-center items-center gap-x-2 rounded-full bg-muted-foreground/15 font-semibold text-sm">
                                 <svg
                                     className="flex-shrink-0 w-4 h-4"
