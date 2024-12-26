@@ -10,8 +10,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Page() {
     return (
-        <div className="w-full max-w-2xl space-y-8">
-            <div className="space-y-2">
+        <div className="w-full max-w-2xl mx-auto space-y-8 my-10">
+            <div className="space-y-2 text-center">
                 <h1 className="text-3xl font-bold">Contact us</h1>
                 <p className="text-gray-500 dark:text-gray-400">
                     Fill out the form below and we&apos;ll get back to you as soon as possible.
