@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
+import SparklesText from "./ui/sparkles-text";
 
 export default function Hero() {
     return (
@@ -36,9 +37,7 @@ export default function Hero() {
                     {/* End Announcement Banner */}
                     {/* Title */}
                     <div className="mt-5 max-w-2xl text-center mx-auto">
-                        <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-                            Learn to Code with Ease
-                        </h1>
+                        <SparklesText text="Learn To Code With Ease" className="text-4xl font-extrabold tracking-tight lg:text-5xl" />
                     </div>
                     {/* End Title */}
                     <div className="mt-5 max-w-3xl text-center mx-auto">
@@ -56,13 +55,22 @@ export default function Hero() {
                     </div>
                     {/* End Buttons */}
                     <div className="mt-5 flex justify-center items-center gap-x-1 sm:gap-x-3">
-                        <a
-                            className="inline-flex items-center gap-x-1 text-sm decoration-2 hover:underline font-medium"
-                            href="#"
-                        >
-                            Go to Courses
-                            <ChevronRightIcon className="flex-shrink-0 w-4 h-4" />
-                        </a>
+                        <script
+                            src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
+                            user-profile="https://topmate.io/embed/profile/abhishek_khare77?theme=D5534D"
+                            btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}'
+                            embed-version="v1"
+                            button-text="Let's Connect"
+                            position-right="30px"
+                            position-bottom="30px"
+                            custom-padding="0px"
+                            custom-font-size="16px"
+                            custom-font-weight="500"
+                            custom-width="200px"
+                            async=""
+                            defer=""
+                        ></script>
+
                     </div>
                 </div>
             </div>
