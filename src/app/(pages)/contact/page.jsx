@@ -34,7 +34,7 @@ export default function Page() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea id="message" placeholder="Enter your message" className="min-h-[100px]" />
                 </div>
-                <Button>Send message</Button>
+                <Button className="w-full">Send message</Button>
             </div>
         </div>
     )

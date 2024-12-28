@@ -42,15 +42,15 @@ export default function Hero() {
                     {/* End Title */}
                     <div className="mt-5 max-w-3xl text-center mx-auto">
                         <p className="text-base text-muted-foreground">
-                            Start building your dream projects with our comprehensive collection of resources and tools. Whether you&apos;re a
-                            beginner or an experienced developer, we&apos;ve got you covered.
+                            Whether you&apos;re a beginner or an experienced developer, we have a wide range of courses and resources to help
+                            you learn new skills, advance your career, and achieve your goals.
                         </p>
                     </div>
                     {/* Buttons */}
                     <div className="mt-8 gap-3 flex justify-center">
-                        <Button size={"lg"}>Get started</Button>
+                        <Button size={"lg"}>Free Courses</Button>
                         <Button size={"lg"} variant={"outline"}>
-                            Learn more
+                            Explore Blogs
                         </Button>
                     </div>
                     {/* End Buttons */}

@@ -1,15 +1,13 @@
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 
 export default function Page() {
     return (
         <div className="flex flex-col min-h-[100dvh]">
-            <header className="bg-gray-900 text-white py-4 px-6 flex items-center justify-between">
+            <header className="bg-gray-900 rounded-t-md mt-2 text-white py-4 px-6 flex items-center justify-between">
                 <Link href="#" className="flex items-center gap-2" prefetch={false}>
-                    <VideoIcon className="w-6 h-6" />
+                    <span className="text-xl font-bold text-white tracking-tight text-pretty">Go to YouTube</span>
                 </Link>
                 <div className="flex items-center gap-4">
                     <Input
@@ -20,14 +18,16 @@ export default function Page() {
 
                 </div>
             </header>
-            <section className="bg-gray-900 py-12 px-6">
+            <section className="bg-gray-900 rounded-b-md py-12 px-6">
                 <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
                     <div className="flex-1">
-                        <h1 className="text-4xl font-bold mb-4 text-white">Discover the best videos</h1>
-                        <p className="text-gray-400 mb-8">Explore a wide range of videos on our platform.</p>
+                        <h1 className="text-4xl font-bold mb-4 text-white">Discover the best courses</h1>
+                        <p className="text-gray-400 mb-8">
+                            Learn from the best instructors in the world. Our courses cover everything you need to know to become a professional developer.
+                        </p>
                         <div className="flex gap-4">
-                            <Button>Upload Video</Button>
-                            <Button variant="secondary">Browse Videos</Button>
+                            <Button variant="outline">Watch Playlists</Button>
+                            <Button variant="ghost" className="text-white border-white border">Browse Courses</Button>
                         </div>
                     </div>
                     <div className="flex-1">
@@ -43,16 +43,16 @@ export default function Page() {
                         <div className="grid items-center gap-6 lg:grid-cols-2">
                             <div className="space-y-4">
                                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                                    Watch your favorite movies and TV shows anytime, anywhere
+                                    Complete FastAPI course
                                 </h1>
                                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                    Choose from a wide range of genres - action, comedy, drama, thriller. Exclusive content. Ad-free
-                                    Streaming. Now available on all your devices.
+                                    Learn how to build a complete FastAPI application from scratch. This course covers everything you need
                                 </p>
                                 <div className="flex gap-4 flex-wrap">
-                                    <Button size="lg">Get Started</Button>
+                                    <Button size="lg">Open in Youtube</Button>
                                     <Button variant="outline" size="lg">
-                                        Tour the Platform
+                                        <VideoIcon className="w-6 h-6 mr-2" />
+                                        Watch Introduction
                                     </Button>
                                 </div>
                             </div>
@@ -87,45 +87,37 @@ export default function Page() {
                                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
                             />
                             <div className="space-y-4">
-                                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Comedy</div>
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                                    Laughter is the best medicine
+                                    Complete Nextjs course
                                 </h2>
                                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                    Enjoy the finest comedy movies and TV shows. From laugh-out- loud comedies to witty satire, we&apos;ve
-                                    got it all.
+                                    Learn how to build a complete Next.js application from scratch. This course covers everything you need.
                                 </p>
                                 <div className="flex gap-4">
-                                    <Link
-                                        href="#"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                                        prefetch={false}
-                                    >
-                                        View All
-                                    </Link>
+                                    <Button size="lg">Open in Youtube</Button>
+                                    <Button variant="outline" size="lg">
+                                        <VideoIcon className="w-6 h-6 mr-2" />
+                                        Watch Introduction
+                                    </Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 bg-gray-100 dark:bg-gray-800">
+                <section className="w-full py-12 md:py-24 rounded-md bg-gray-100 dark:bg-gray-800">
                     <div className="container px-4 md:px-6">
                         <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
                             <div className="space-y-4">
-                                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Action</div>
-                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Adrenaline Rush</h2>
+                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Docker</h2>
                                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                    Buckle up for high-speed chases, intense fight sequences, and explosive action. Watch the best action
-                                    movies and TV shows on your favorite platform.
+                                    Learn how to build, test, and deploy Docker applications with our Docker course. This course covers everything you need.
                                 </p>
                                 <div className="flex gap-4">
-                                    <Link
-                                        href="#"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                                        prefetch={false}
-                                    >
-                                        View All
-                                    </Link>
+                                    <Button size="lg">Open in Youtube</Button>
+                                    <Button variant="outline" size="lg">
+                                        <VideoIcon className="w-6 h-6 mr-2" />
+                                        Watch Introduction
+                                    </Button>
                                 </div>
                             </div>
                             <img
@@ -149,52 +141,18 @@ export default function Page() {
                                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
                             />
                             <div className="space-y-4">
-                                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Romance</div>
-                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Love is in the air</h2>
+                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Complete Javascript course</h2>
                                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                    Fall in love with the most romantic movies and TV shows. From epic love stories to charming rom-coms,
-                                    we&apos;ve got the perfect date night.
+                                    Learn how to build a complete Javascript application from scratch. This course covers everything you need.
                                 </p>
                                 <div className="flex gap-4">
-                                    <Link
-                                        href="#"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                                        prefetch={false}
-                                    >
-                                        View All
-                                    </Link>
+                                    <Button size="lg">Open in Youtube</Button>
+                                    <Button variant="outline" size="lg">
+                                        <VideoIcon className="w-6 h-6 mr-2" />
+                                        Watch Introduction
+                                    </Button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="w-full py-12 md:py-24 bg-gray-100 dark:bg-gray-800">
-                    <div className="container px-4 md:px-6">
-                        <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
-                            <div className="space-y-4">
-                                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">Thriller</div>
-                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Edge of Your Seat</h2>
-                                <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                    Get ready for heart-pounding suspense with the best thriller movies and TV shows. From gripping crime
-                                    dramas to mind-bending mysteries.
-                                </p>
-                                <div className="flex gap-4">
-                                    <Link
-                                        href="#"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                                        prefetch={false}
-                                    >
-                                        View All
-                                    </Link>
-                                </div>
-                            </div>
-                            <img
-                                src="/placeholder.svg"
-                                width="550"
-                                height="310"
-                                alt="Image"
-                                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                            />
                         </div>
                     </div>
                 </section>

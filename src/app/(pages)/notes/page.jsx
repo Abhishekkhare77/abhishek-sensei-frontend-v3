@@ -18,11 +18,10 @@ export default function Page() {
                         </div>
                         <div className="space-y-4">
                             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                                Discover the Joy of Reading
+                                Complete Handbooks of all the courses you watched.
                             </h1>
                             <p className="text-muted-foreground md:text-xl">
-                                Immerse yourself in a world of literature with our intuitive PDF book reader. Enjoy offline access,
-                                bookmarking, and seamless annotations.
+                                We provide you with the best handbooks for all the courses you watched. You can download them in PDF format and read them offline.
                             </p>
                             <div className="flex gap-2">
                                 <Link
@@ -30,26 +29,26 @@ export default function Page() {
                                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                                     prefetch={false}
                                 >
-                                    Get Started
+                                    Download Now
                                 </Link>
                                 <Link
                                     href="#"
                                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                                     prefetch={false}
                                 >
-                                    Learn More
+                                    Browse top handbooks
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-muted mb-5 rounded-md">
                     <div className="container space-y-12 px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center">
                             <div className="space-y-2">
                                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Books</h2>
                                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                    Discover our curated selection of must-read PDF books across various genres.
+                                    Discover our curated selection of must-read Handbooks for all the courses.
                                 </p>
                             </div>
                         </div>
@@ -64,8 +63,7 @@ export default function Page() {
                                     style={{ aspectRatio: "200/300", objectFit: "cover" }}
                                 />
                                 <div className="text-center">
-                                    <h3 className="text-lg font-bold">The Great Gatsby</h3>
-                                    <p className="text-muted-foreground">F. Scott Fitzgerald</p>
+                                    <h3 className="text-lg font-bold">FastAPI</h3>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center space-y-2">
@@ -78,8 +76,7 @@ export default function Page() {
                                     style={{ aspectRatio: "200/300", objectFit: "cover" }}
                                 />
                                 <div className="text-center">
-                                    <h3 className="text-lg font-bold">To Kill a Mockingbird</h3>
-                                    <p className="text-muted-foreground">Harper Lee</p>
+                                    <h3 className="text-lg font-bold">NextJs</h3>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center space-y-2">
@@ -92,8 +89,7 @@ export default function Page() {
                                     style={{ aspectRatio: "200/300", objectFit: "cover" }}
                                 />
                                 <div className="text-center">
-                                    <h3 className="text-lg font-bold">1984</h3>
-                                    <p className="text-muted-foreground">George Orwell</p>
+                                    <h3 className="text-lg font-bold">JavaScript</h3>
                                 </div>
                             </div>
                             <div className="flex flex-col items-center space-y-2">
@@ -106,8 +102,7 @@ export default function Page() {
                                     style={{ aspectRatio: "200/300", objectFit: "cover" }}
                                 />
                                 <div className="text-center">
-                                    <h3 className="text-lg font-bold">Pride and Prejudice</h3>
-                                    <p className="text-muted-foreground">Jane Austen</p>
+                                    <h3 className="text-lg font-bold">ReactJs</h3>
                                 </div>
                             </div>
                         </div>
